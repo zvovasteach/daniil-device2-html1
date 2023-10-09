@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Техномарт</title>
+  <title>HTML Academy: Device</title>
 </head>
 <body>
 <header class="page-header">
@@ -18,12 +18,13 @@
       <a class="user-menu-link" href="#">Коля Петухов</a>
     </li>
     <li class="user-menu-item">
-      <a class="user-menu-link user-menu-link-disabled" href="#">Войти</a>
+      <a class="user-menu-link user-menu-link-disabled" href="#">Выйти</a>
     </li>
     <li class="user-menu-item">
       <a class="user-menu-link" href="#">Сравнить</a>
     </li>
     <li class="user-menu-item">
+      <span>2</span>
       <a class="user-menu-link" href="#">Корзина</a>
     </li>
   </ul>
@@ -74,10 +75,10 @@
           <span class="visually-hidden">Изменить максимальную цену</span>
         </button>
           <label class="catalog-filter-label">
-            от <input type="number" class="catalog-filter-input" name="min-price"> 0
+            от <input type="number" class="catalog-filter-input" name="min-price" value="0">
           </label>
         <label class="catalog-filter-label">
-          до <input type="number" class="catalog-filter-input" name="max-price"> 5000
+          до <input type="number" class="catalog-filter-input" name="max-price" value="5000">
         </label>
       </fieldset>
 
@@ -86,27 +87,27 @@
         <ul class="catalog-filter-list">
           <li class="catalog-filter-item">
             <label class="control">
-              <input class="catalog-filter-checkbox" type="checkbox" name="Black-color" checked> Черный
+              <input class="catalog-filter-checkbox" type="checkbox" name="color" value="Black" checked> Черный
             </label>
           </li>
           <li class="catalog-filter-item">
             <label class="control">
-              <input class="catalog-filter-checkbox" type="checkbox" name="White-color" checked> Белый
+              <input class="catalog-filter-checkbox" type="checkbox" name="color" value="White" checked> Белый
             </label>
           </li>
           <li class="catalog-filter-item">
             <label class="control">
-              <input class="catalog-filter-checkbox" type="checkbox" name="Blue-color"> Синий
+              <input class="catalog-filter-checkbox" type="checkbox" name="color" value="Blue"> Синий
             </label>
           </li>
           <li class="catalog-filter-item">
             <label class="control">
-              <input class="catalog-filter-checkbox" type="checkbox" name="Red-color"> Красный
+              <input class="catalog-filter-checkbox" type="checkbox" name="color" value="Red"> Красный
             </label>
           </li>
           <li class="catalog-filter-item">
             <label class="control">
-              <input class="catalog-filter-checkbox" type="checkbox" name="Pink-color"> Розовый
+              <input class="catalog-filter-checkbox" type="checkbox" name="color" value="Pink"> Розовый
             </label>
           </li>
         </ul>
@@ -117,12 +118,12 @@
         <ul class="catalog-filter-list">
           <li class="catalog-filter-item">
             <label class="control">
-              <input class="catalog-filter-radio" type="radio" name="Bluetooth-yes" checked> Есть
+              <input class="catalog-filter-radio" type="radio" name="Bluetooth" value="yes" checked> Есть
             </label>
           </li>
           <li class="catalog-filter-item">
             <label class="control">
-              <input class="catalog-filter-radio" type="radio" name="Bluetooth-no"> Нет
+              <input class="catalog-filter-radio" type="radio" name="Bluetooth" value="no"> Нет
             </label>
           </li>
         </ul>
@@ -133,8 +134,7 @@
 
 <div class="product-sort">
   <form class="product-sort-form">
-    <h2 class="catalog-heading">Сортировка:</h2>
-    <label class="visually-hidden" for="sorting">Сортировка</label>
+    <label class="visually-hidden" for="sorting">Сортировка:</label>
     <select class="product-sort-list" id="sorting">
         <option class="product-sort-item" value="Popular">Популярные</option>
       </select>
@@ -154,6 +154,7 @@
       <li class="products-cards-item">
         <a class="product-cards-link" href="#">
           <img src="#" alt="">
+          <span class="button-yellow">Подробнее</span>
           <h3 class="product-cards-title">Любительская селфи-палка</h3>
         </a>
           <b>500 ₽</b>
@@ -161,6 +162,8 @@
       <li class="products-cards-item">
         <a class="product-cards-link" href="#">
           <img src="#" alt="">
+          <span class="button-yellow">Подробнее</span>
+          <span>NEW</span>
           <h3 class="product-cards-title">Профессиональная селфи-палка </h3>
         </a>
           <b>1 500 ₽</b>
@@ -168,6 +171,7 @@
       <li class="products-cards-item">
         <a class="product-cards-link" href="#">
           <img src="#" alt="">
+          <span class="button-yellow">Подробнее</span>
           <h3 class="product-cards-title">Непотопляемая селфи-палка</h3>
         </a>
           <b>2 500 ₽</b>
@@ -175,6 +179,7 @@
       <li class="products-cards-item">
         <a class="product-cards-link" href="#">
           <img src="#" alt="">
+          <span class="button-yellow">Подробнее</span>
           <h3 class="product-cards-title">Селфи-палка «Следуй за мной»</h3>
         </a>
           <b>1 500 ₽</b>
@@ -184,9 +189,7 @@
 
     <ul class="product-cards-pagination">
       <li class="product-cards-pagination-item">
-        <a class="product-cards-pagination-link pagination-prev pagination-disabled">
-          <span>Назад</span>
-        </a>
+        <a class="product-cards-pagination-link pagination-prev pagination-disabled">Назад</a>
       </li>
       <li class="product-cards-pagination-item">
         <a class="product-cards-pagination-link pagination-current">1</a>
@@ -204,9 +207,7 @@
         <a class="product-cards-pagination-link" href="#">15</a>
       </li>
       <li class="product-cards-pagination-item">
-        <a class="product-cards-pagination-link pagination-next" href="#">
-          <span>Вперёд</span>
-        </a>
+        <a class="product-cards-pagination-link pagination-next" href="#">Вперёд</a>
       </li>
     </ul>
   </section>
