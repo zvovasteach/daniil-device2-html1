@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+  background-color: #FFFFFF;
+}
+
+.button-yellow {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 800;
+  font-style:normal;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.user-menu-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.page-navigation-link {
+  font-family: "Raleway", sans-serif;
+  line-height: 18px;
+  font-weight: 800;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.page-header {
+  background-color: #FFE17F;
+}
+
+.heading {
+  font-family: "Raleway", sans-serif;
+  line-height: 50px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.slider-data-name {
+  font-size: 16px;
+}
+
+.slider-data-info {
+  font-size: 36px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.devices-link {
+  font-family: "Raleway", sans-serif;
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #000000;
+  text-decoration: none;
+}
+
+.delivery-link {
+  font-family: "Raleway", sans-serif;
+  line-height: normal;
+  font-size: 20px;
+  font-weight: 800;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.delivery-item {
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+}
+
+.contacts-heading {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.address-info {
+  font-style: normal;
+}
+
+.contacts-tel {
+  color: #444444;
+  text-decoration: underline;
+}
+
+.newsletter {
+  background-color: #F0F0F0;
+}
+
+.newsletter-button {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: normal;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.page-footer {
+  background-color: #444444;
+  color: #FFFFFF;
+}
+
+.footer-info {
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.footer-navigation-link {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.footer-tel {
+  color: #FFFFFF;
+}
