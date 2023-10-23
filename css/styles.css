@@ -159,3 +159,94 @@ body {
 .footer-tel {
   color: #ffffff;
 }
+
+.inner-header-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+  color: #000000;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.catalog-filter {
+  background-color: #f0f0f0;
+}
+
+.product-sort {
+  background-color: #f0f0f0;
+}
+
+.product-cards-pagination {
+  background-color: #f0f0f0;
+}
+
+.catalog-heading {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.catalog-filter-type {
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: -0.36px;
+  color: #000000;
+}
+
+.control {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.product-sort-item {
+  font-weight: 400;
+  color: #000000;
+}
+
+.product-cards-link {
+  text-decoration: none;
+}
+
+.product-cards-title {
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+  letter-spacing: -0.36px;
+}
+
+.product-cards-button {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+}
+
+.product-cards-pagination-link {
+  text-decoration: none;
+  line-height: 20px;
+  color: #444444;
+}
+
+.pagination-move {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
