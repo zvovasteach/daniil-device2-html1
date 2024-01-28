@@ -19,8 +19,6 @@
         <path d="M83.458 0.388916V10.4889L91.0633 0.388916H83.458Z" fill="#510094"/>
       </svg>
     </a>
-<!--    <img class="header-logo" src="img/logo-header.svg" width="145" height="36"-->
-<!--         alt="Логотип интернет-магазина device">-->
     <div class="user-container">
       <form class="header-search" action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually-hidden" for="header-search-text">Поиск</label>
@@ -35,17 +33,58 @@
         <li class="user-menu-item ">
           <a class="user-menu-link user-menu-item-compare" href="#">Сравнить</a>
         </li>
-        <li class="user-menu-item ">
-<!--          <span>2</span>-->
+        <li class="user-menu-item user-menu-popup-cart">
           <a class="user-menu-link user-menu-item-cart" href="#"><span>2</span>Корзина</a>
+          <div class="popover-cart-disable">
+            <div class="popover popover-cart">
+              <div class="popover-content">
+                <img class="popover-cart-img" src="/img/popup-cart-product-1.png" width="39" height="43">
+                <span>Любительская<br> селфи-палка</span>
+                <button class="popover-button popover-cart-button-del" type="button">
+                  <span class="visually-hidden">Удалить товар</span>
+                </button>
+              </div>
+              <div class="popover-content">
+                <img class="popover-cart-img" src="/img/popup-cart-product-2.png" width="39" height="43">
+                <span>Профессиональная<br> селфи-палка</span>
+                <button class="popover-button popover-cart-button-del" type="button">
+                  <span class="visually-hidden">Удалить товар</span>
+                </button>
+              </div>
+              <div class="popover-cart-info">
+                <span>Товаров: 2</span>
+                <span>Сумма: 2000 ₽</span>
+              </div>
+              <button class="popover-button popover-cart-button" type="button">
+                <span>Открыть корзину</span>
+              </button>
+            </div>
+          </div>
+
         </li>
       </ul>
     </div>
 
     <nav class="page-navigation">
       <ul class="page-navigation-list">
-        <li class="page-navigation-item">
-          <a class="page-navigation-link" href="#">Каталог товаров</a>
+        <li class="page-navigation-item sub-menu-item">
+          <a class="page-navigation-link page-navigation-catalog-button" href="#">Каталог товаров</a>
+        <div class="sub-menu-container">
+          <div class="catalog-sub-menu">
+            <div class="catalog-sub-menu-item">
+              <a class="catalog-sub-menu-link" href="#">Виртуальная реальность</a>
+              <a class="catalog-sub-menu-link" href="catalog.html">Моноподы для cелфи</a>
+              <a class="catalog-sub-menu-link" href="#">Экшн-камеры</a>
+            </div>
+            <div class="catalog-sub-menu-item">
+              <a class="catalog-sub-menu-link" href="#">Фитнес-браслеты</a>
+              <a class="catalog-sub-menu-link" href="#">Умные часы</a>
+            </div>
+            <div class="catalog-sub-menu-item">
+              <a class="catalog-sub-menu-link" href="#">Квадрокоптеры</a>
+            </div>
+          </div>
+        </div>
         </li>
         <li class="page-navigation-item">
           <a class="page-navigation-link page-navigation-link-current" href="#">Доставка</a>
@@ -136,7 +175,7 @@
       <button class="slider-button slider-next" type="button">
         <span class="visually-hidden">Следующий слайд</span>
       </button>
-      <ol class="slider-pagination visually-hidden">
+      <ol class="slider-pagination">
         <li class="slider-pagination-item">
           <button class="slider-pagination-button slider-pagination-button-current" type="button">
             <span class="visually-hidden">1 слайд</span>
@@ -265,7 +304,6 @@
 
 <footer class="page-footer">
   <div class="container footer-container">
-<!--    <div class="footer-logo-container">-->
     <a class="footer-logo" href="#">
       <svg width="145" height="36" viewBox="0 0 145 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
         <path d="M27.2 0V35.3H19.6V32.9C17.9 34.8 15.5 36 12.1 36C5.5 36 0 30.2 0 22.7C0 15.2 5.5 9.4 12.1 9.4C15.5 9.4 18 10.6 19.6 12.5V0H27.2ZM19.6 22.7C19.6 18.9 17.1 16.5 13.6 16.5C10.1 16.5 7.6 18.9 7.6 22.7C7.6 26.5 10.1 28.9 13.6 28.9C17.1 28.8 19.6 26.5 19.6 22.7Z"/>
@@ -277,11 +315,7 @@
         <path d="M83.4 0V10.1L91 0H83.4Z"/>
       </svg>
     </a>
-<!--      <img src="img/logo-footer.svg" width="145" height="36" class="footer-logo"-->
-<!--           alt="Логотип интернет-магазина device">-->
       <address class="footer-info address-info">Санкт-Петербург, набережная<br> реки Карповки, 5, литера П.</address>
-<!--    </div>-->
-<!--    <div class="media-container">-->
       <nav class="footer-navigation">
         <ul class="footer-navigation-list">
           <li class="footer-navigation-item">
@@ -297,7 +331,7 @@
       </nav>
       <ul class="media-list">
         <li class="media-item media-item-facebook">
-          <a class="media-link" href="#">
+          <a class="media-link" href="https://www.facebook.com/htmlacademy">
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
               <path d="M22.5 14H25V11H21.6C18.8 11 18 12.7 18 15.2V17H16V20H18V29H21V20H24.3L24.9 17H21V15.5C21 14.7 21.3 14 22.5 14Z" fill="#444444"/>
             </svg>
@@ -305,7 +339,7 @@
           </a>
         </li>
         <li class="media-item media-item-instagramm">
-          <a class="media-link" href="#">
+          <a class="media-link" href="https://www.instagram.com/htmlacademy/">
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
               <path d="M20 22C21.1046 22 22 21.1046 22 20C22 18.8954 21.1046 18 20 18C18.8954 18 18 18.8954 18 20C18 21.1046 18.8954 22 20 22Z" fill="#444444"/>
               <path d="M26.7 13.3C25.8 12.4 24.7 12 23.3 12H16.7C13.9 12 12 13.9 12 16.7V23.3C12 24.7 12.4 25.9 13.4 26.7C14.3 27.6 15.4 28 16.7 28H23.3C24.7 28 25.9 27.6 26.7 26.7C27.5 25.8 28 24.7 28 23.3V16.7C28 15.3 27.6 14.1 26.7 13.3ZM20 24.1C17.8 24.1 15.9 22.3 15.9 20C15.9 17.7 17.8 15.9 20 15.9C22.2 15.9 24.1 17.7 24.1 20C24.1 22.3 22.2 24.1 20 24.1ZM24.6 16.7C23.9 16.7 23.3 16.2 23.3 15.4C23.3 14.6 23.8 14.1 24.6 14.1C25.3 14.1 25.9 14.7 25.9 15.4C25.9 16.1 25.3 16.7 24.6 16.7Z" fill="#444444"/>
@@ -314,7 +348,7 @@
           </a>
         </li>
         <li class="media-item media-item-twitter">
-          <a class="media-link" href="#">
+          <a class="media-link" href="https://twitter.com/htmlacademy_ru">
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
               <path d="M22.7 13.1551C24.2 12.6551 25.3 13.4551 25.9 14.2551C26.4 14.0551 27 13.8551 27.6 13.6551C27.6 14.4551 27.1 15.0551 26.8 15.2551C27.5 15.4551 28 14.8551 28 14.8551C27.9 15.7551 27.1 16.5551 26.6 16.7551C26.4 23.0551 23.8 27.1551 17.7 27.0551C17.2 27.0551 17.8 27.0551 17.3 27.0551C17 27.0551 13.6 26.6551 13 25.2551C15 25.4551 16.4 24.8551 17.1 24.1551C16.3 23.8551 14.7 23.7551 14.5 21.3551C14.8 21.5551 15 21.6551 15.6 21.5551C14.5 20.7551 13.3 20.0551 13.4 18.0551C13.7 18.3551 14.3 18.5551 14.6 18.4551C14 18.2551 12.8 15.3551 13.8 13.8551C15.4 15.5551 17.1 17.2551 20.1 17.3551C20.3 15.2551 21.1 13.8551 22.7 13.1551Z" fill="#444444"/>
             </svg>
@@ -322,8 +356,6 @@
           </a>
         </li>
       </ul>
-<!--    </div>-->
-<!--    <div class="footer-info-container">-->
       <a class="footer-tel" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
       <a class="htmlacademy-logo" href="#" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" width="115" height="33" viewBox="0 0 115 33" aria-hidden="true" focusable="false" class="htmlacademy-logo-svg" fill="none">
@@ -341,9 +373,50 @@
           <path d="M109.4 27L105.8 18.1H103.6L108.4 29.7C108.1 30.6 107.7 30.9 106.7 30.9H104.2V32.9H106.7C108.5 32.9 109.5 32.1 110.2 30.3L114.9 18.1H112.8L109.4 27Z"/>
         </svg>
       </a>
-<!--      <img src="img/html-logo-footer.svg" width="115" height="33" class="htmlacademy-logo" alt="Логотип htmlacademy">-->
-<!--    </div>-->
   </div>
 </footer>
+<form class="modal-name" action="https://echo.htmlacademy.ru/" method="post">
+<div class="modal-container">
+  <div class="modal modal-delivery">
+    <div class="modal-wrapper modal-wrapper-heading">
+    <h1 class="heading">Доставка под заказ</h1>
+    <button class="modal-button-close" type="button"><span class="visually-hidden">Закрыть модальное окно</span></button>
+    </div>
+    <div class="modal-wrapper">
+      <div class="modal-wrapper-meta">
+          <label for="modal-name-field" class="modal-name-tag modal-name-label">Ваше имя:</label>
+          <input type="text" class="modal-name-field modal-field" name="name-fiel" placeholder="Введите имя" id="modal-name-field">
+          <span>Добавьте имя</span>
+      </div>
+      <div class="modal-wrapper-meta">
+          <label for="modal-email-field" class="modal-name-tag modal-email-label">Ваш e-mail:</label>
+          <input type="email" class="modal-email-field error modal-field" name="email-field" placeholder="Введите e-mail" id="modal-email-field">
+          <span>Забавный у вас адрес</span>
+      </div>
+    </div>
+    <div class="modal-wrapper">
+      <div class="modal-wrapper-meta">
+          <label for="modal-delivery-info-field" class="modal-name-tag">Что нужно привезти:</label>
+          <input type="text" class="modal-delivery-info-field modal-field" name="delivery-info-field" placeholder="В свободной форме" id="modal-delivery-info-field">
+      </div>
+      <div class="modal-wrapper-meta">
+          <label for="modal-count-field" class="modal-name-tag">Количество:</label>
+          <div class="modal-info-field ">
+            <div class="modal-info-field-active">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</div>
+          </div>
+        <div class="count-wrapper error">
+          <button class="count-button modal-button-count-decrease" type="button"><span class="visually-hidden">Увеличить количество</span> </button>
+          <input type="number" class="modal-count-field modal-field" name="delivery-count-field" id="modal-count-field" value="1">
+          <button class="count-button modal-button-count-increase" type="button"><span class="visually-hidden">Уменьшить количество</span> </button>
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="modal-button button-yellow">Отправить</button>
+  </div>
+</div>
+</form>
+
+
+
 </body>
 </html>
