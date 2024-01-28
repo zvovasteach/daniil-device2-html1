@@ -8,7 +8,7 @@
 <body class="page-body">
 <header class="page-header">
   <div class="container header-container">
-    <a class="header-logo" href="https://htmlacademy.ru/">
+    <a class="header-logo" href="index.html">
       <svg width="145" height="37" viewBox="0 0 145 37" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
         <path d="M27.2188 0.388916V35.6889H19.6135V33.2889C17.9124 35.1889 15.5107 36.3889 12.1084 36.3889C5.5038 36.3889 0 30.5889 0 23.0889C0 15.5889 5.5038 9.78892 12.1084 9.78892C15.5107 9.78892 18.0124 10.9889 19.6135 12.8889V0.388916H27.2188ZM19.6135 23.0889C19.6135 19.2889 17.1118 16.8889 13.6094 16.8889C10.107 16.8889 7.60524 19.2889 7.60524 23.0889C7.60524 26.8889 10.107 29.2889 13.6094 29.2889C17.1118 29.1889 19.6135 26.8889 19.6135 23.0889Z"/>
         <path d="M43.7298 29.5888C45.8313 29.5888 47.5325 28.7888 48.5332 27.6888L54.6374 31.1888C52.1356 34.5888 48.4331 36.3888 43.6298 36.3888C35.0238 36.3888 29.6201 30.5888 29.6201 23.0888C29.6201 15.5888 35.0238 9.78882 43.0294 9.78882C50.4345 9.78882 55.8382 15.4888 55.8382 23.0888C55.8382 24.1888 55.7381 25.1888 55.538 26.0888H37.6256C38.6263 28.6888 40.9279 29.5888 43.7298 29.5888ZM48.333 20.4888C47.5325 17.5888 45.2309 16.4888 42.9293 16.4888C40.0273 16.4888 38.126 17.8888 37.4255 20.4888H48.333Z"/>
@@ -44,8 +44,24 @@
 
     <nav class="page-navigation-catalog">
       <ul class="page-navigation-list">
-        <li class="page-navigation-item">
-          <a class="page-navigation-link" href="#">Каталог товаров</a>
+        <li class="page-navigation-item sub-menu-item">
+          <a class="page-navigation-link page-navigation-catalog-button" href="#">Каталог товаров</a>
+            <div class="sub-menu-container">
+              <div class="catalog-sub-menu">
+                <div class="catalog-sub-menu-item">
+                  <a class="catalog-sub-menu-link catalog-sub-menu-link-active" href="#">Виртуальная реальность</a>
+                  <a class="catalog-sub-menu-link" href="catalog.html">Моноподы для cелфи</a>
+                  <a class="catalog-sub-menu-link" href="#">Экшн-камеры</a>
+                </div>
+                <div class="catalog-sub-menu-item">
+                  <a class="catalog-sub-menu-link" href="#">Фитнес-браслеты</a>
+                  <a class="catalog-sub-menu-link" href="#">Умные часы</a>
+                </div>
+                <div class="catalog-sub-menu-item">
+                  <a class="catalog-sub-menu-link" href="#">Квадрокоптеры</a>
+                </div>
+              </div>
+            </div>
         </li>
         <li class="page-navigation-item">
           <a class="page-navigation-link" href="#">Доставка</a>
@@ -81,10 +97,11 @@
     <div class="catalog-wrap">
       <div class="container catalog-container">
         <section class="catalog-filter">
-          <div>
           <h2 class="catalog-heading">Фильтр:</h2>
+          <div>
+
           <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="post">
-          </div>
+
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-type">Стоимость</legend>
               <div class="range">
@@ -150,7 +167,13 @@
             </fieldset>
             <button class="catalog-filter-button button-yellow" type="submit">Показать</button>
           </form>
+
+
+          </div>
+
+
         </section>
+
         <div class="product-cards-wrap">
           <div class="product-sort">
             <h2 class="product-sort-heading">Сортировка:</h2>
@@ -293,7 +316,7 @@
     </nav>
     <ul class="media-list">
       <li class="media-item media-item-facebook">
-        <a class="media-link" href="#">
+        <a class="media-link" href="https://www.facebook.com/htmlacademy">
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
             <path d="M22.5 14H25V11H21.6C18.8 11 18 12.7 18 15.2V17H16V20H18V29H21V20H24.3L24.9 17H21V15.5C21 14.7 21.3 14 22.5 14Z" fill="#444444"/>
           </svg>
@@ -301,7 +324,7 @@
         </a>
       </li>
       <li class="media-item media-item-instagramm">
-        <a class="media-link" href="#">
+        <a class="media-link" href="https://www.instagram.com/htmlacademy/">
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
             <path d="M20 22C21.1046 22 22 21.1046 22 20C22 18.8954 21.1046 18 20 18C18.8954 18 18 18.8954 18 20C18 21.1046 18.8954 22 20 22Z" fill="#444444"/>
             <path d="M26.7 13.3C25.8 12.4 24.7 12 23.3 12H16.7C13.9 12 12 13.9 12 16.7V23.3C12 24.7 12.4 25.9 13.4 26.7C14.3 27.6 15.4 28 16.7 28H23.3C24.7 28 25.9 27.6 26.7 26.7C27.5 25.8 28 24.7 28 23.3V16.7C28 15.3 27.6 14.1 26.7 13.3ZM20 24.1C17.8 24.1 15.9 22.3 15.9 20C15.9 17.7 17.8 15.9 20 15.9C22.2 15.9 24.1 17.7 24.1 20C24.1 22.3 22.2 24.1 20 24.1ZM24.6 16.7C23.9 16.7 23.3 16.2 23.3 15.4C23.3 14.6 23.8 14.1 24.6 14.1C25.3 14.1 25.9 14.7 25.9 15.4C25.9 16.1 25.3 16.7 24.6 16.7Z" fill="#444444"/>
@@ -310,7 +333,7 @@
         </a>
       </li>
       <li class="media-item media-item-twitter">
-        <a class="media-link" href="#">
+        <a class="media-link" href="https://twitter.com/htmlacademy_ru">
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
             <path d="M22.7 13.1551C24.2 12.6551 25.3 13.4551 25.9 14.2551C26.4 14.0551 27 13.8551 27.6 13.6551C27.6 14.4551 27.1 15.0551 26.8 15.2551C27.5 15.4551 28 14.8551 28 14.8551C27.9 15.7551 27.1 16.5551 26.6 16.7551C26.4 23.0551 23.8 27.1551 17.7 27.0551C17.2 27.0551 17.8 27.0551 17.3 27.0551C17 27.0551 13.6 26.6551 13 25.2551C15 25.4551 16.4 24.8551 17.1 24.1551C16.3 23.8551 14.7 23.7551 14.5 21.3551C14.8 21.5551 15 21.6551 15.6 21.5551C14.5 20.7551 13.3 20.0551 13.4 18.0551C13.7 18.3551 14.3 18.5551 14.6 18.4551C14 18.2551 12.8 15.3551 13.8 13.8551C15.4 15.5551 17.1 17.2551 20.1 17.3551C20.3 15.2551 21.1 13.8551 22.7 13.1551Z" fill="#444444"/>
           </svg>
